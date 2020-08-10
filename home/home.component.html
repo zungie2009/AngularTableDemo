@@ -1,0 +1,27 @@
+<h1>User Address List</h1>
+<div *ngIf="userList" class="play_container">
+    <table class="tg">
+        <thead>
+          <tr>
+            <th class="tg-0pky">First Name</th>
+            <th class="tg-0pky">Last Name</th>
+            <th class="tg-0pky">Email</th>
+            <th class="tg-0pky">Address</th>
+            <th class="tg-0pky">Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of userList">
+              <td>{{ row.first_name }}</td>
+              <td>{{ row.last_name }}</td>
+              <td>{{ row.email }}</td>
+              <td>{{ row.address }}, {{ row.City }}, {{ row.State }} {{ row.Zip}}</td>
+              <td>{{ row.Country }}</td>
+          </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+    
